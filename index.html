@@ -1,75 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GroceryScout</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>GroceryScout</h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Search groceries...">
-                <button id="search-btn"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="cart-icon" id="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count" id="cart-count">0</span>
-            </div>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipe-gemini-grocer</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
 
-    <nav>
-        <div class="container">
-            <ul class="category-nav">
-                <li data-category="all" class="active">All</li>
-                <li data-category="fruits">Fruits & Vegetables</li>
-                <li data-category="dairy">Dairy & Eggs</li>
-                <li data-category="spices">Spices & Masalas</li>
-                <li data-category="grains">Rice & Grains</li>
-                <li data-category="snacks">Snacks</li>
-            </ul>
-        </div>
-    </nav>
+    <meta property="og:title" content="recipe-gemini-grocer" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <main>
-        <div class="container">
-            <section class="products-section">
-                <h2 id="products-heading">All Products</h2>
-                <div class="products-grid" id="products-grid"></div>
-            </section>
-        </div>
-    </main>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-    <div class="cart-sidebar" id="cart-sidebar">
-        <div class="cart-header">
-            <h3>Your Cart</h3>
-            <button id="close-cart"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="cart-items" id="cart-items"></div>
-        <div class="cart-footer">
-            <div class="cart-total">
-                <span>Total:</span>
-                <span id="cart-total">₹0.00</span>
-            </div>
-            <button id="checkout-btn">Checkout</button>
-        </div>
-    </div>
-
-    <div id="overlay" class="overlay"></div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 GroceryScout. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="database.js"></script>
-    <script src="main.js"></script>
-</body>
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
