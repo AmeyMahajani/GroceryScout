@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryScout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>GroceryScout</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search groceries...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="category-nav">
+                <li data-category="all" class="active">All</li>
+                <li data-category="fruits">Fruits & Vegetables</li>
+                <li data-category="dairy">Dairy & Eggs</li>
+                <li data-category="spices">Spices & Masalas</li>
+                <li data-category="grains">Rice & Grains</li>
+                <li data-category="snacks">Snacks</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="products-section">
+                <h2 id="products-heading">All Products</h2>
+                <div class="products-grid" id="products-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₹0.00</span>
+            </div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GroceryScout. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="database.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
